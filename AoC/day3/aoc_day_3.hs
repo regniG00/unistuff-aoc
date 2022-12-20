@@ -19,11 +19,18 @@ bigAbc = ['A'..'Z']
 
 {-
 Aufgabe 1
+
+Lösung: 7824
 -}
 getTotalPriorities::String->Int
 getTotalPriorities xs = sum (getRucksackPriorites ls)
  where ls = lines xs
 
+{-
+Aufgabe 2
+
+Lösung: 2798
+-}
 getTotalGroupPrios::String->Int
 getTotalGroupPrios xs = sum (map getGroupPrio groups)
  where groups = divideIntoGroups (lines xs)
