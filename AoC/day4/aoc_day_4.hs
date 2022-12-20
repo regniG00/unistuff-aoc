@@ -12,11 +12,18 @@ createOutput a b = "Solution 1: "
 
 {-
 Funktion für Aufgabe 1
+
+Lösung: 539
 -}
 task1::String->Int
 task1 xs = countSecs allIntPairs includingSection
  where allIntPairs = getAllIntPairs (lines xs)
 
+{-
+Funktion für Aufgabe 2
+
+Lösung: 871
+-}
 task2::String->Int
 task2 xs = countSecs allIntPairs overlappingSection
  where allIntPairs = getAllIntPairs (lines xs)
